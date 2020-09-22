@@ -10,7 +10,7 @@ public class EmpWageComputation
             System.out.println("Employee Absent");
         int hours_day=8, wage_hr=20;
         int daily_wage=8*20;
-        int part_time_hour=8;
-        int empType=(int) (Math.random()*10)%2;
+        int part_time_hour=4;
+        int empType=(int) (Math.random()*10)%3;
     }
 }
