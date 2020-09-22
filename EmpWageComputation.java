@@ -3,7 +3,7 @@ public class EmpWageComputation
     public static void main(String args[])
     {
         System.out.println("Welcome to Employee Wage Computation Program on Master Branch");
-        int empCheck= (int)(Math.random()*10)/5;
+        int empCheck= (int)(Math.random()*10)%2;
         if(empCheck==1)
             System.out.println("Employee Present");
         else
@@ -11,6 +11,6 @@ public class EmpWageComputation
         int hours_day=8, wage_hr=20;
         int daily_wage=8*20;
         int part_time_hour=8;
-        int empType=(int) (Math.random()*10)/5;
+        int empType=(int) (Math.random()*10)%2;
     }
 }
