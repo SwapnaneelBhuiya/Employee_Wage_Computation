@@ -12,6 +12,5 @@ public class EmpWageComputation
         int daily_wage=8*20;
         int part_time_hour=8;
         int empType=(int) (Math.random()*10)/5;
-
     }
 }
