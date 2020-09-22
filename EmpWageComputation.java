@@ -20,7 +20,7 @@ public class EmpWageComputation
                     daily_wage=4*20;
                     break;
                 default:
-                    daily wage =0;
+                    daily_wage =0;
             }
         }
         else
