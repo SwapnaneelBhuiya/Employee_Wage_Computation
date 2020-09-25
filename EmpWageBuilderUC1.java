@@ -1,5 +1,5 @@
 import java.util.*;
-public class EmpWageBuilderUC1 extends CompanyEmpWage
+public class EmpWageBuilderUC1 extends CompanyEmpWage implements EmpWageBuild
 {
     public static ArrayList<CompanyEmpWage> ar=new ArrayList<CompanyEmpWage>();
 

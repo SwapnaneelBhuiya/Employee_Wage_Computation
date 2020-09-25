@@ -11,7 +11,6 @@ public class CompanyEmpWage
         this.hrs=hrs;
         this.days=days;
     }
-
     public static String getName() {
         return name;
     }
