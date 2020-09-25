@@ -84,7 +84,5 @@ public class EmpWageBuilderUC1
                 wages.add(ComputeWage(ar[i].getName(),ar[i].getRate(),ar[i].getDays(),ar[i].getHrs()));
             //System.out.println("Total wage for "+name+ "is: "+ComputeWage(name,emprate,days,emp_hr));
         }
-
-
 }
 
