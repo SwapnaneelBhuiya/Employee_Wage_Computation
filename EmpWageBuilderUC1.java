@@ -1,25 +1,6 @@
+import java.util.*;
 public class EmpWageBuilderUC1
 {
-        static final int IS_FULL_TIME=2;
-        static final int EMP_RATE_HR=20;
-        static final int IS_PART_TIME=1;
-        static final int NUM_WORKING_DAYS=20;
-        static final int NUM_WORKING_HRS=100;
-
-	/*public String company;
-	public int emprate;
-	public int wrkingdays;
-	public int wrkinghrs;
-	public int totalwage;
-
-	/*public Employee7(String company,int emprate,int wrkingdays, int wrkinghrs)
-	{
-		this.company=company;
-		this.emprate=emprate;
-		this.wrkingdays=wrkingdays;
-		this.wrkinghrs=wrkinghrs;
-	}*/
-
         public static int ComputeWage(String company,int emprate1, int totalworkdays1, int totalemphrs1)
         {
             int employeehrs=0;
@@ -56,19 +37,19 @@ public class EmpWageBuilderUC1
 
 
         }
-/*public String toString()
-{
-	return "Total emp wage for company: "+company+" is "+totalwage;
-}*/
 
 
         public static void main(String[] args) {
-
-
-            //Employee7 e= new Employee7();
-            //e.ComputeWage();
-            //ComputeWage();
-            System.out.println(ComputeWage("Redmi",25,5,100));
+            Scanner sc=new Scanner(System.in);
+            System.out.println("Enter each company info");
+            for(int i=0;i<4;i++)
+            {
+                String name=sc.nextLine();
+                int emp_hr=sc.nextInt();
+                int emprate=sc.nextInt();
+                int days=sc.nextInt();
+                System.out.println("Total wage for "+name+ "is: "+ComputeWage(name,emprate,days,emp_hr));
+            }
         }
 
 
