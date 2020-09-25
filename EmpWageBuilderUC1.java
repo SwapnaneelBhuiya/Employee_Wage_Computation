@@ -1,6 +1,17 @@
 import java.util.*;
 public class EmpWageBuilderUC1
 {
+    public static String name;
+    public static int rate;
+    public static int hrs;
+    public static int days;
+    public EmpWageBuilderUC1(name, rate, hrs, days)
+    {
+        this.name=name;
+        this.rate=rate;
+        this.hrs=hrs;
+        this.days=days;
+    }
         public static int ComputeWage(String company,int emprate1, int totalworkdays1, int totalemphrs1)
         {
             int employeehrs=0;
@@ -42,14 +53,19 @@ public class EmpWageBuilderUC1
         public static void main(String[] args) {
             Scanner sc=new Scanner(System.in);
             System.out.println("Enter each company info");
+            ArrayList<EmpWageBuilderUC1> ar=new ArrayList<EmpWageBuilderUC1>();
             for(int i=0;i<4;i++)
             {
-                String name=sc.nextLine();
+                String name1=sc.nextLine();
                 int emp_hr=sc.nextInt();
                 int emprate=sc.nextInt();
-                int days=sc.nextInt();
-                System.out.println("Total wage for "+name+ "is: "+ComputeWage(name,emprate,days,emp_hr));
+                int days1=sc.nextInt();
+                ar.add(new EmpWageBuilderUC1(name1,emprate,emp_hr,days1);
             }
+            ArrayList<Integer> wages=new ArrayList<Integer>();
+            for(int i=0;i<4;i++)
+                wages.add(ComputeWage(ar[i].name,ar[i].rate,ar[i].days,ar[i].hrs));
+            //System.out.println("Total wage for "+name+ "is: "+ComputeWage(name,emprate,days,emp_hr));
         }
 
 
