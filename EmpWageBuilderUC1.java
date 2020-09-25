@@ -12,7 +12,24 @@ public class EmpWageBuilderUC1
         this.hrs=hrs;
         this.days=days;
     }
-        public static int ComputeWage(String company,int emprate1, int totalworkdays1, int totalemphrs1)
+
+    public static String getName() {
+        return name;
+    }
+
+    public static int getRate() {
+        return rate;
+    }
+
+    public static int getHrs() {
+        return hrs;
+    }
+
+    public static int getDays() {
+        return days;
+    }
+
+    public static int ComputeWage(String company, int emprate1, int totalworkdays1, int totalemphrs1)
         {
             int employeehrs=0;
             int totalworkdays=0;
@@ -64,7 +81,7 @@ public class EmpWageBuilderUC1
             }
             ArrayList<Integer> wages=new ArrayList<Integer>();
             for(int i=0;i<4;i++)
-                wages.add(ComputeWage(ar[i].name,ar[i].rate,ar[i].days,ar[i].hrs));
+                wages.add(ComputeWage(ar[i].getName(),ar[i].getRate(),ar[i].getDays(),ar[i].getHrs()));
             //System.out.println("Total wage for "+name+ "is: "+ComputeWage(name,emprate,days,emp_hr));
         }
 
