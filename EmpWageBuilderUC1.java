@@ -61,8 +61,19 @@ public class EmpWageBuilderUC1 extends CompanyEmpWage implements EmpWageBuild
             {
                 wages.add(ComputeWage(ar[i].getName(),ar[i].getRate(),ar[i].getDays(),ar[i].getHrs()));
                 daily_total_wages.put(ar[i].getRate(),wages[i]);
+                System.out.println("Total wage for "+ar[i].getName()+ "is: "+wages[i]);
             }
-            //System.out.println("Total wage for "+name+ "is: "+ComputeWage(name,emprate,days,emp_hr));
+            System.out.println("Enter company name to be searched");
+            String search_name=sc.nextLine();
+            for(int i=0;i<4;i++)
+            {
+                if(comp_name(i).equals(search_name))
+                {
+                    System.out.println("Total Wage for "+comp_name(i)+" is " + wages(i));
+                    System.exit(0);
+                }
+            }
+            System.out.println("Company not found!");
         }
 }
 
