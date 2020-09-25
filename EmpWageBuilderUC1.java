@@ -2,6 +2,7 @@ import java.util.*;
 public class EmpWageBuilderUC1 extends CompanyEmpWage implements EmpWageBuild
 {
     public static ArrayList<CompanyEmpWage> ar=new ArrayList<CompanyEmpWage>();
+    public static ArrayList<String> comp_name=new ArrayList<String>();
 
     public static int ComputeWage(String company, int emprate1, int totalworkdays1, int totalemphrs1)
         {
@@ -52,6 +53,7 @@ public class EmpWageBuilderUC1 extends CompanyEmpWage implements EmpWageBuild
                 int days1=sc.nextInt();
                 CompanyEmpWage obj=new CompanyEmpWage(name1,emprate,emp_hr,days1);
                 ar.add(obj);
+                comp_name.add(name1);
             }
             ArrayList<Integer> wages=new ArrayList<Integer>();
             for(int i=0;i<4;i++)
